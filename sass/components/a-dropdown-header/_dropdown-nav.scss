@@ -1,0 +1,37 @@
+// menu
+
+.dropdown__menu {
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.dropdown__list {
+  text-decoration: none;
+  margin-bottom: 306px;
+}
+
+.dropdown__link {
+  color: $text-primary-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color $action-total-time $action-time;
+
+  @extend %links-hover-focus;
+
+  &--current {
+    color: $accent-color;
+  }
+}
+
+.dropdown__item:not(:last-child) {
+  display: block;
+  margin-bottom: 32px;
+}

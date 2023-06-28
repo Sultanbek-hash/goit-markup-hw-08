@@ -1,0 +1,30 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $hero-footer-color;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+}
+
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 94px;
+  }
+}
+
+.logo--margin-change {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.logo__part--white {
+  color: $primary-white-color;
+}
